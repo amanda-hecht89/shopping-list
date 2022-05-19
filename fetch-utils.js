@@ -41,10 +41,9 @@ export async function logout() {
 //     return error ? console.error(error) : data;
 // }
 
-export async function createListItem(name, qty) {
-    const response = await client.from('shopping').insert({ name, qty });
+export async function createListItem(name, quantity) {
+    const response = await client.from('shopping').insert({ name, quantity });
     if (response.error) {
-        console.error(response.error.message);
     } else {
         return response.data;
     }
