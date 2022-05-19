@@ -14,3 +14,4 @@ form.addEventListener('submit', async (e) => {
     const itemData = new FormData(form);
     const data = await createListItem(itemData.get('name'), itemData.get('quantity'));
 });
+
