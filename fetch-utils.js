@@ -59,3 +59,12 @@ export async function togglePurchased(item) {
         .match({ id: item.id }); 
     return response.data;
 }
+
+export async function deleteAll() {
+    const response = await client
+        .from('shopping')
+        .delete()
+        .match({ user_id: getUser().id });
+    return response.data;
+
+}

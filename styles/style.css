@@ -132,4 +132,5 @@ footer {
 
 .complete {
     text-decoration: line-through;
+    color: red;
 }
