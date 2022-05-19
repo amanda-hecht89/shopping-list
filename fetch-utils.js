@@ -51,3 +51,11 @@ export async function fetchListItems() {
     const response = await client.from('shopping').select('*').order('name');
     return response.data;
 }
+
+export async function togglePurchased(item) {
+    const response = await client
+        .from('shopping')
+        .update({ purchased: !item.purchased })
+        .match({ id: item.id }); 
+    return response.data;
+}
