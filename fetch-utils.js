@@ -48,3 +48,8 @@ export async function createListItem(name, quantity) {
         return response.data;
     }
 }
+
+export aync function fetchListItems() {
+    const response = await client.from('shopping').select('*').order('name');
+    return response.data
+}
