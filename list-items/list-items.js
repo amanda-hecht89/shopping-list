@@ -1,4 +1,4 @@
-import { checkAuth, logout, createListItem } from '../fetch-utils.js';
+import { checkAuth, logout, createListItem, fetchListItems } from '../fetch-utils.js';
 import { renderItem } from '../utlis.js';
 
 checkAuth();
@@ -19,19 +19,18 @@ form.addEventListener('submit', async (e) => {
 
 async function displayListItems() {
     shopListEl.textContent = ' ';
-    const data = wait fetchListItems();
-    (data) {
-        for (let item of data) {
-            const listEl = renderItem(item);
-            listEl.addEventListener('click', async (e) => {
-                e.preventDefault()
-                await togglePurchased(item);
-                displayListItems();
-            });
-            shopListEl.append(listEl);
-        }
+    const data = await fetchListItems();
+    (data); 
+    for (let item of data) {
+        const listEl = renderItem(item);
+        listEl.addEventListener('click', async (e) => {
+            e.preventDefault();
+            await togglePurchased(item);
+            displayListItems();
+        });
+        shopListEl.append(listEl);
     }
-
 }
+
 
 displayListItems();

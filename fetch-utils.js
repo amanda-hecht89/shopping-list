@@ -43,13 +43,11 @@ export async function logout() {
 
 export async function createListItem(name, quantity) {
     const response = await client.from('shopping').insert({ name, quantity });
-    if (response.error) {
-    } else {
-        return response.data;
-    }
+    return response.data;
+
 }
 
-export aync function fetchListItems() {
+export async function fetchListItems() {
     const response = await client.from('shopping').select('*').order('name');
-    return response.data
+    return response.data;
 }
