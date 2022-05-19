@@ -7,8 +7,28 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Making a plan
 
 1. **Make a drawing of your app. Simple "wireframes"**
+in notebook
 1. **Once you have a drawing, name the HTML elements you'll need to realize your vision**
+page1
+*header
+*2 forms (done)
+page2 (bottom) 
+*ul list of times append a li to it
+*checkbox (clickable toggle)(supabase call)
+*delete all button(clickable)(supabase call)
+page2 (top)
+*form 
+*submit that creats new items on list
 1. **For each HTML element ask: Why do I need this?**
+page1
+*header displays info
+*2 forms for sign in and up
+page2 (bottom)
+*ul holds list
+*checkbox displays purchassed or not
+*delete clea
+*form with inputs for infomation needed
+*submit adds item to the list
 1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
 1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
 1. **Think about how to validate each of your features according to a Definition of Done**
