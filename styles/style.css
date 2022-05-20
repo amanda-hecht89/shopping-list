@@ -53,9 +53,14 @@ header {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    color: palegreen
+}
+
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    color: cornflowerblue;
 }
 
 .gutter-right {
@@ -73,7 +78,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -85,30 +90,29 @@ footer {
     box-shadow: var(--shadow);
 }
 
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
 
+@keyframes pulse {
+    20% {
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+    
     40% {
         transform: rotate3d(10, 10, -10, 50deg) scale(1);
     }
-
+    
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
+    }
+    
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
-  }
+    
+}
 
 #logout {
-    position: fixed;
-    right: 20px;
-    top: 90px;
+    color: green;
+    font-size: 30px;
 }
 
 .auth-main {
@@ -132,5 +136,66 @@ footer {
 
 .complete {
     text-decoration: line-through;
+    font-size: 25px;
     color: red;
+}
+
+
+form {
+    color: darkred;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+}
+
+#add {
+    size: 45px;
+    font-size: larger;
+    color: blue;
+align-items: center;
+}
+
+#delete {
+    color: purple;
+    font-size: 30px;
+}
+
+#shopList {
+    font-size: 25px;
+    color: darkcyan
+}
+
+input {
+    color: aqua;
+    font-size: 30px;
+}
+
+button {
+    color: palevioletred;
+    font-size: 30px;
+}
+
+#sign-in {
+    color: blue;
+}
+
+#sign-up {
+    color: yellow
+}
+
+#sign-in-email {
+    color: aqua;
+}
+
+#sign-in-password {
+    color: peru;
+}
+
+#sign-up-email {
+    color: aqua;
+}
+
+#sign-up-password {
+    color: peru;
 }
