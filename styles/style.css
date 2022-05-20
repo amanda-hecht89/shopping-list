@@ -17,9 +17,15 @@ body {
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
     font-family: 'Bubblegum Sans', sans-serif;
-    background-color: var(--color2);
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B1040%2C750%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2021%2F07%2F06%2Fimpulse-buying-2000.jpg');
+    
+}
+
+#list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -50,11 +56,15 @@ header {
     justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
-    box-shadow: var(--shadow);background-color: aqua;
+    box-shadow: var(--shadow);
+    position: relative;
+    background-color: red;
+    animation-name: rainbow;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
 }
 
 h1 {
-    color: palegreen;
     font-size: 45px;
     position: relative;
     animation-name: slide;
@@ -67,6 +77,8 @@ h2 {
     font-size: 1.8rem;
     font-weight: bold;
     color: cornflowerblue;
+    display: flex;
+    justify-content: center;
 }
 
 .gutter-right {
@@ -86,7 +98,7 @@ p {
 }
 
 footer {
-    position: fixed;
+    font-size: 20px;
     width: 100%;
     bottom: 0;
     height: var(--footer-height);
@@ -94,9 +106,12 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-    background-color: aqua;
+    position: fixed;
+    background-color: red;
+    animation-name: rainbow;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
 }
-
 
 @keyframes pulse {
     20% {
@@ -118,7 +133,7 @@ footer {
 }
 
 #logout {
-    color: green;
+    
     font-size: 30px;
 }
 
@@ -143,13 +158,12 @@ footer {
 
 .complete {
     text-decoration: line-through;
-    font-size: 25px;
+    font-size: 35px;
     color: red;
 }
 
 
 form {
-    color: darkred;
     display: flex;
     flex-direction: column;
     font-size: 30px;
@@ -159,58 +173,54 @@ form {
 #add {
     size: 45px;
     font-size: larger;
-    color: blue;
-align-items: center;
+    align-items: center;
 }
 
 #delete {
-    color: purple;
+
     font-size: 30px;
 }
 
 #shopList {
-    font-size: 25px;
-    color: darkcyan
+    font-size: 35px;
 }
 
 input {
-    color: aqua;
+
     font-size: 30px;
+}
+
+#listsss {
+    background-color: rgba(148, 205, 205, 0.601);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
-    color: palevioletred;
+
     font-size: 30px;
-}
-
-#sign-in {
-    color: blue;
-}
-
-#sign-up {
-    color: yellow
-}
-
-#sign-in-email {
-    color: aqua;
-}
-
-#sign-in-password {
-    color: peru;
-}
-
-#sign-up-email {
-    color: aqua;
-}
-
-#sign-up-password {
-    color: peru;
 }
 
 @keyframes slide {
     0%   {top: 0px; left: 0%}
-    25%  {top:0px; left: 25%}
+    25%  {top: 0px; left: 25%}
     50%  {top: 0px; left: 50%}
     75%  {top: 0px; left: 75%}
-    100% { top:0px; left: 100%}
+    100% {top: 0px; left: 100%}
+}
+
+@keyframes rainbow {
+    0% {background-color: rgb(196, 145, 145);}
+    10% {background-color: rgb(230, 183, 96);}
+    20% {background-color: rgb(223, 223, 140);}
+    30% {background-color: rgb(183, 214, 122);}
+    40% {background-color: rgb(74, 158, 74);}
+    50% {background-color: rgb(125, 125, 209);}
+    60% {background-color: rgb(103, 103, 199);}
+    70% {background-color: rgb(229, 158, 229);}
+    80% {background-color: rgb(228, 88, 228);}
+    90% {background-color: rgb(244, 137, 210);}
+    100% {background-color: rgb(242, 106, 106);}
 }

@@ -13,36 +13,37 @@
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <header>
         <div class="gutter-right logo">
-            <img src="../assets/big-logo.png" />
+            <img src="../assets/bread.png"><img src="../assets/broccoli.png"><img src="../assets/juice.png"><img src="../assets/cheese.png">
+            <img src="../assets/mushroom.png"><img src="../assets/rackoflamb.png"><img src="../assets/peanutbutter.png"><img src="../assets/strawberry.png">
         </div>
     </header>    
     <button id="logout">Logout</button>
-    <main>
-        <h1>Lets Shop!</h1>
-    </main>
-    <body>
-<form class="weNeed">
-    <label>
-        Quantity:
-        <input type="number" name="quantity" min="0" />
-    </label>
-    <label>
-        Name:
-        <input name="name"/>
-    </label>
-    <button id="add">Add Item</button>
-</form>
-<hr/>
-<ul id="shopList"></ul>
-<hr/>
-<button id="delete">Delete List</button>
-    </body>
-    <footer>
-        <div class="copy gutter-right">&copy; Amanda 2022 Alchemy Code Lab</div>
-    </footer>
+    <div id="list-container">
+
+        <main id="listsss">
+            <h1>Lets Shop!</h1>
+            <form class="weNeed">
+                <label>
+                    Quantity:
+                    <input type="number" name="quantity" min="0" />
+                </label>
+                <label>
+                    Name:
+                    <input name="name"/>
+                </label>
+                <button id="add">Add Item</button>
+            </form>
+            <div >
+                <br/>
+                <ul id="shopList"></ul>
+                <br/>
+            </div>
+            <button id="delete">Delete List</button>
+        </main>
+    </div>
     <script type="module" src="./list-items.js"></script>
 </body>
 
