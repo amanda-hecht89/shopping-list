@@ -44,3 +44,17 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+
+
+PHOTO REFERNCES
+<a target="_blank" href="https://icons8.com/icon/48651/bread">Bread</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/nGTmSxNQVX3H/broccoli">Broccoli</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/FUWP96hGem1R/mushroom">Mushroom</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/98770/cheese">Cheese</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/98806/juice-bottle">Juice Bottle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/49179/strawberry">Strawberry</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/UCSFkh3r5vHh/rack-of-lamb">Rack of Lamb</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/s9NCuc1HoMdI/peanut-butter">Peanut Butter</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/48904/deliver-food">Deliver Food</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
