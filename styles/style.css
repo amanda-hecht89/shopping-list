@@ -56,8 +56,11 @@ header {
 h1 {
     color: palegreen;
     font-size: 45px;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+
 }
 
 h2 {
@@ -91,6 +94,7 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+    background-color: aqua;
 }
 
 
@@ -201,4 +205,12 @@ button {
 
 #sign-up-password {
     color: peru;
+}
+
+@keyframes slide {
+    0%   {top: 0px; left: 0%}
+    25%  {top:0px; left: 25%}
+    50%  {top: 0px; left: 50%}
+    75%  {top: 0px; left: 75%}
+    100% { top:0px; left: 100%}
 }
